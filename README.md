@@ -10,6 +10,19 @@ ChipIntel is an interactive NLP dashboard for comparing how semiconductor compan
 
 The demo corpus covers NVIDIA, AMD, Broadcom, TSMC, Micron, and ASML. Instead of returning a black-box label, the dashboard shows the topics, keywords, sentiment signals, and source documents behind each comparison.
 
+## Contents
+
+- [Why this project is useful](#why-this-project-is-useful)
+- [Explore the dashboard](#explore-the-dashboard)
+- [Quick start](#quick-start)
+- [Use your own data](#use-your-own-data)
+- [Technical workflow](#technical-workflow)
+- [Project structure](#project-structure)
+- [Reproducibility and limitations](#reproducibility-and-limitations)
+- [Contribution](#contribution)
+- [Support and collaboration](#support-and-collaboration)
+- [License](#license)
+
 ## Why this project is useful
 
 An analyst reviewing six companies may need to answer questions such as:
@@ -38,6 +51,12 @@ The app provides:
 - Upload support for `.csv`, `.pdf`, and `.txt` documents
 
 ## Quick start
+
+### Prerequisites
+
+- Python 3.10 or newer
+- Git
+- A terminal that can create and activate a Python virtual environment
 
 ### 1. Install
 
@@ -104,6 +123,15 @@ chipintel-nlp/
 ## Reproducibility and limitations
 
 The included corpus is synthetic and intended for a reproducible portfolio demonstration. Sentiment scores are explainable lexical signals, not investment advice or a substitute for financial research. Real-world use should add sourced documents, stronger validation, document-level metadata, and domain review.
+
+## Contribution
+
+To suggest an improvement:
+
+1. Open an issue describing the use case and expected behavior.
+2. Create a focused branch for the change.
+3. Keep analysis logic in `src/nlp_pipeline.py` and interface changes in `app.py`.
+4. Test the app locally and include a short explanation of the result in the pull request.
 
 ## Support and collaboration
 
